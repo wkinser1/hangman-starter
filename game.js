@@ -4,7 +4,7 @@
  * Setup the variables and functions needed to create gameplay
  */
 
-const word = "computers",
+const word = "supercalafragilisticexpialidocious",
   correctLetters = [],
   incorrectLetters = [],
   guessesAllowed = 5;
