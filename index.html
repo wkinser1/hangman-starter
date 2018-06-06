@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <title>Hangman</title>
+</head>
+<body>  
+  <h1>Hangman!</h1>
+
+  <p>
+    You'll have 5 chances to correctly guess the word below.
+  </p>
+
+  <div id='hangmanProgress'></div>
+  
+  <p id='wordStats'></p>  
+
+  <p>
+    <strong>Correct Guesses: </strong> <span id="correctGuesses"></span>
+  </p>
+
+  <p>
+    <strong>Incorrect Guesses</strong> <span id='incorrectGuesses'></span>
+  </p>
+
+  <label for="letterInput">Letter:</label> 
+  <input type='text' name="letterInput" id='letterInput' size=1 maxlength=1/>
+  <button id='submitGuess'>Guess Letter</button>
+
+  <script src='game.js'></script>  
+</body>
+</html>
