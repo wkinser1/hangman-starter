@@ -26,6 +26,7 @@ function findLetter(letter) {
 function updateGameProgressAndReturnRevealed() {
   // How many correctly guessed letters should we reveal?
   let revealed = [];
+  
   for (var i = 0; i < word.length; i++) {
     if (correctLetters.indexOf(word[i]) > -1) {
       revealed.push(word[i]);
@@ -67,7 +68,7 @@ progress.innerText = updateGameProgressAndReturnRevealed();
 wordStats.innerText = `${progress.innerText.length} letters`;
 
 submitGuess.addEventListener('click', () => {
-  findLetter(letterInput.value);
+  findLetter(letterInput.value.toLowerCase());
   progress.innerText = updateGameProgressAndReturnRevealed();
   letterInput.value = '';
 
